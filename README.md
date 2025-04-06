@@ -7,7 +7,7 @@ This project demonstrates how to use an ultrasonic sensor in combination with a 
 - **HC-SR04 Ultrasonic Sensor**
   - `TRIG_PIN`: Pin 5 (Trigger)
   - `ECHO_PIN`: Pin 18 (Echo)
-  
+
 - **Vibration Motor/Buzzer**
   - `VIBRATION_PIN`: Pin 15 (Motor/Buzzer)
 
@@ -90,33 +90,4 @@ void loop() {
   // Add a small delay to avoid rapid switching
   delay(200);
 }
-```
-Functionality
-Distance Calculation: The ultrasonic sensor sends out a pulse, and the time taken for the pulse to reflect back is measured. This time is used to calculate the distance to an object.
-
-Threshold Logic: If the calculated distance is less than the defined threshold, the vibration motor or buzzer will activate, providing a proximity alert.
-
-Alert Deactivation: If no object is detected within the threshold distance, the motor or buzzer is turned off.
-
-Installation
-Connect your hardware:
-
-Make sure to wire the HC-SR04 ultrasonic sensor and the vibration motor or buzzer according to the pin definitions above.
-
-Upload the code:
-
-Open Arduino IDE (or any compatible environment) and paste the code.
-
-Select the correct board and port, then upload the sketch.
-
-Test the system:
-
-Open the Serial Monitor to observe the distance readings.
-
-Place an object in front of the sensor to see the vibration motor or buzzer activate.
-
-Customization
-Adjust the thresholdDistance value to change the proximity range at which the alert is triggered.
-
-You can modify the code to integrate other alerting mechanisms such as LEDs or alarms.
 
